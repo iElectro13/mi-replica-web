@@ -33,6 +33,10 @@ nav, .right-items {
     font-size: 1rem;
 }
 
+.right-items i {
+    font-size: 1.1rem;
+}
+
 nav {
     padding: 1.5rem 0rem;
     box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.205);
@@ -49,6 +53,7 @@ nav {
     color: #F6F4FE;
     font-size: 0.9rem;
     font-weight:500;
+    align-items: center;
 }
 
 .active {
@@ -62,61 +67,52 @@ main {
     padding: 2rem 0rem;
 }
 
-section h1 {
-    font-size: 5rem;
+h1 {
     font-family: Newsreader;
-    margin-bottom: 0px;
+    font-size: 6vw;
 }
 
-#main-sec {
+section {
+    background: red;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-height: 80vh;
 }
 
-section picture {
-    height: 80vh;
-    max-height: 1000px;
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 0rem;
+    background: blue;
+}
+
+.left p {
+    font-size: 1.3rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: chartreuse;
     position: relative;
-    overflow: hidden;
     z-index: 1;
 }
 
-picture img {
-    position: absolute;
-    width: 260px;
-    z-index: 4;
+.right img {
+    width: 49%;
+    z-index: 20;
 }
 
-section p {
-    font-size: 1.5rem;
-    color: #6B737D;
-    font-weight: normal;
-}
-
-.circle {
-    width: 400px;
+.right .circle {
+    width: 80%;
     aspect-ratio: 1/1;
     background: rgb(103,0,238);
     background: linear-gradient(90deg, rgba(103,0,238,1) 0%, rgba(183,0,226,1) 100%);
     border-radius: 50%;
     position: absolute;
-    z-index: 2;
-    left: -4.8rem;
-    top: 4rem
-}
-
-.phone-video {
-    position: absolute;
-    z-index: 3;
-    width: 240px;
-    height: 500px;
-    top: 20px;
-    left: 10px;
-    border-radius: 30px;
-}
-
-.crop {
-    width: max-content;
-    height: max-content;
+    z-index: 10;
 }
