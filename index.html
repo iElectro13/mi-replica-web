@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600;700;800&display=swap" rel="stylesheet"> 
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
         rel="stylesheet" />
@@ -33,27 +33,91 @@
             </div>
 
             <div class="right-items">
-                <div class="item active">Inicio</div>
-                <div class="item">Notas</div>
-                <div class="item">Aprendizaje</div>
+                <a href="#main-sec" class="item active">Inicio</a>
+                <a href="#second-sec" class="item">Notas</a>
+                <a href="#aprendizaje" class="item">Aprendizaje</a>
                 <button type="button" class="header-button"><i class="bi bi-chat-text-fill"></i>Enviar Feedback</button>
             </div>
         </div>
     </nav>
 
     <main>
-        <section id="main-sec">
+        <div class="container">
 
-            <div class="left">
-                <h1>¡Muéstranos<br>tu talento<br>programando!</h1>
-                <p>Esta es tu oportunidad para que nos deslumbres y nos hagas sentir orgullosos de lo que puedes hacer una semana después!</p>
-            </div>
+            <section id="main-sec">
+    
+                    <div class="left">
+                        <h2>¡Muéstranos<br>tu talento<br>programando!</h2>
+                        <p>Esta es tu oportunidad para que nos deslumbres y nos hagas sentir orgullosos de lo que puedes hacer una semana después!</p>
+                    </div>
+        
+                    <div class="phone">
+                        <div class="circle"></div>
+                        <video src="./src/video/demo-pantala.mp4" autoplay loop></video>
+                        <img src="./src/img/celular.png" alt="">
+                        <div class="cross">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                        </div>
+                        <div class="mini-circle">
+                        </div>
+                    </div>
+            </section>
+        </div>
 
-            <div class="right">
-                <div class="circle"></div>
-                <img src="./src/img/celular.png" alt="">
+        <section id="second-sec">
+                <div class="container">
+                <h2>Y toma nota...<br>De lo que seguirás<br>aprendiendo.</h2>
+                <button class="ghost">Prográmate Educamás</button>
             </div>
         </section>
+
+
+        <div class="container">
+        <section id="aprendizaje">
+                <div class="phone">
+                    <div class="circle"></div>
+                        <video src="./src/video/demo-pantala.mp4" autoplay loop></video>
+                        <img src="./src/img/celular.png" alt="">
+                        <div class="cross">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                        </div>
+                        <div class="mini-circle">
+                        </div>
+                </div>
+                <div class="info">
+                    <div class="info-item">
+                        <i class="bi bi-phone"></i>
+                        <h3>Hacer páginas<br>responsive</h3>
+                        <p>Aprenderás a crear páginas ajustables a los diferentes tamaños de los dispositivos.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-window"></i>
+                        <h3>Frameworks</h3>
+                        <p>Aprenderás la utilidad de los frameworks y cómo utilizarlos.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="bi bi-briefcase"></i>
+                        <h3>Crear tu portafolio</h3>
+                        <p>Aprenderás a hacer un portafolio atractivo y profesional.</p>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+                            <linearGradient id="icon" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#f69ec4" />
+                                <stop offset="50%" stop-color="#7eb4e2" />
+                                <stop offset="100%" stop-color="#32557f" />
+                            </linearGradient>
+                        </svg>
+                        <h3>Desarrollador Fullstack</h3>
+                        <p>Y al final serás un excelente desarrollador Fullstack.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 
