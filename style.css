@@ -260,3 +260,15 @@ button {
     background: linear-gradient(90deg, rgba(103,0,238,1) 0%, rgba(183,0,226,1) 100%);
 
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 7rem;
+    background: #26292E;
+    color: #F6F4FE;
+    font-size: 0.9rem;
+}
