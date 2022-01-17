@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+*{
+    outline: 1px solid red;
+}
+
 body {
     margin: 0;
     background: #F8F9FA;
@@ -86,10 +90,8 @@ h2 {
 }
 
 section {
-    background: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
     min-height: 90vh;
     padding-top: 4.5rem;
 }
@@ -101,7 +103,6 @@ section {
     flex-direction: column;
     align-items: flex-start;
     padding: 3rem 0rem;
-    background: blue;
     justify-content: center;
 }
 
@@ -114,7 +115,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: chartreuse;
     position: relative;
     z-index: 1;
 }
@@ -212,7 +212,7 @@ button {
 
 #aprendizaje {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 1fr 1fr;
 }
 
 #aprendizaje .circle {
@@ -271,4 +271,44 @@ footer {
     background: #26292E;
     color: #F6F4FE;
     font-size: 0.9rem;
+}
+
+
+@media (max-width: 1080px){
+
+    h2 {
+    font-size: 10vw;
+    }
+
+    .container {
+        width: 95%;
+    }
+    section, #aprendizaje {
+        grid-template-columns: 1fr;
+        min-height: 97vh;
+        padding-top: 2rem;
+
+    }
+    
+    .phone img {
+        width: 30%;
+        z-index: 30;
+    }
+    .phone .circle {
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: rgb(103,0,238);
+        background: linear-gradient(90deg, rgba(103,0,238,1) 0%, rgba(183,0,226,1) 100%);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .phone video {
+        width: 28%;
+        aspect-ratio: 9/18;
+        position: absolute;
+        z-index: 20;
+        border-radius: 3vw;
+    }
 }
