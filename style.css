@@ -200,11 +200,13 @@ p {
 }
 
 .line-1 {
-    rotate: -60deg;
+    transform: rotate(-60deg);
+
 }
 
 .line-2 {
-    rotate: 30deg;
+    transform: rotate(30deg);
+
 }
 
 .mini-circle {
@@ -274,11 +276,12 @@ button {
 }
 
 #aprendizaje .line-1 {
-    rotate: 60deg;
+    transform: rotate(60deg);
 }
 
 #aprendizaje .line-2 {
-    rotate: -30deg;
+    transform: rotate(-30deg);
+
 }
 
 #aprendizaje .info {
