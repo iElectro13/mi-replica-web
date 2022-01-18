@@ -220,7 +220,7 @@ p {
 
 #second-sec {
     background: black;
-    background-image: url('/src/img/background.jpg');
+    background-image: url('./src/img/background.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
